@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(228, 226, 227);
+}
+
+/* styling the heading text */
+.heading h2{
+    text-align: center;
+    margin-top: 3em ;
+    font-size: 2.3em;
+    color: rgb(12, 113, 138);
+}
+/* clock body style */
+#clock-body{
+    background-color: rgb(12, 113, 138);
+    color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* margin-top: -50px;
+    margin-left: -150px; */
+    transform: translate(-50%, -50%);
+    padding: 1em;
+    display: flex;
+    width: fit-content;
+    border-radius: 1.5em;
+}
+/* the time body */
+.time{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* the time span; it wraps each set of text */
+.time span{
+    margin: .2em;
+}
+/* the top and bottom layers of the clock text */
+.time .top, .time .colons{
+    font-size: 2em;
+}
+/* bottom layer only */
+.time .bottom{
+    font-size: .6em;
+}
+/* the colons separating the time */
+.colons{
+    align-self: center;
+    position: relative;
+    top: -.3em;
+}
